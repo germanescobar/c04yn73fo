@@ -4,6 +4,6 @@ class Api::V1::ProductsController < ApplicationController
   end
 
   def create
-    
+    head 201
   end
 end
