@@ -22,7 +22,10 @@ class Api::V1::ProductsController < ApplicationController
   end
 
   def destroy
-    
+    product = Product.find(params[:id])
+    product.destroy
+
+    head 204
   end
 
   private
