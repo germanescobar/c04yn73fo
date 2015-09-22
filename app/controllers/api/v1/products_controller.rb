@@ -21,6 +21,10 @@ class Api::V1::ProductsController < ApplicationController
     end
   end
 
+  def destroy
+    
+  end
+
   private
     def product_params
       params.require(:product).permit(:name, :price)
